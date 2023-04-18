@@ -15,7 +15,7 @@ const ListMessages = () => {
       <ul>
         {messages.length > 0 &&
           messages.map((msg) => (
-            <li key={msg._id}>{msg.content} from {msg.user}</li>
+            <li key={msg._id}>{msg.content} from {msg.user} create:{msg.createdAt}</li>
           ))}
       </ul>
     </section>
